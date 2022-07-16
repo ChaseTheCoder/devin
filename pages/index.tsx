@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { Hero } from '../components';
+import { Hero, Header } from '../components';
 
 const Home: NextPage = () => {
   return (
@@ -9,6 +9,7 @@ const Home: NextPage = () => {
         <title>Devin Buchanan</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Header/>
       <Hero/>
     </div>
   )
