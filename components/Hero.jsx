@@ -8,11 +8,13 @@ import Link from 'next/link';
 // }
 
 const Hero = ({ header }) => {
+  console.log(header.name)
   return (
     <div>
       <div className="grid">
         <h1>{header.name}</h1>
-        <h2><a href={header.socialHandle} target="_blank">{header.socialHandleLink}</a></h2>
+        <h2><a href={header.socialHandleLink} target="_blank">{header.socialHandle}</a></h2>
+        {/* <img src={header.headerImage.url} alt={header.name} /> */}
       </div>
     </div>
   )
