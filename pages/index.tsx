@@ -3,10 +3,8 @@ import { Hero, Header } from '../components';
 import { getHeader } from '../services';
 
 export default function Home({ header }) {
-  console.log("werk");
-  console.log(header);
   return (
-    <div className="container mx-auto px-10 mb-8">
+    <div className="container mx-auto px-10 max-w-screen-xl">
       <Head>
         <title>Devin Buchanan</title>
         <link rel="icon" href="/favicon.ico" />

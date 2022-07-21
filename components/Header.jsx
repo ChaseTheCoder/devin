@@ -5,8 +5,8 @@ const navItems = [{name: 'fitness'}, {name: 'eqx+'}, {name: 'modeling'}];
 
 const Header = () => {
   return (
-    <div className="container mx-auto px-10 mb-8">
-      <div className="w-full inline-block py-8">
+    <div className="container">
+      <div className="w-full inline-block py-5">
         <ul className="md float-left list-outside">
           <li>
             <Link href="/">
@@ -26,7 +26,7 @@ const Header = () => {
         <div className="hiddn md: float-left md:contents">
           {navItems.map((item) => (
             <Link key={item.name} href={`#${item.name}`}>
-              <span className="md:float-right mt-2 align-middle text-white ml-4 uppercase font-semibod cursor-pointer">
+              <span className="md:float-right align-middle ml-4 uppercase font-semibod cursor-pointer">
                 {item.name}
               </span>
             </Link>
