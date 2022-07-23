@@ -4,15 +4,13 @@ import { getHeader } from '../services';
 
 export default function Home({ header }) {
   return (
-    <div className="container mx-auto max-w-screen-xl">
+    <div className="container mx-auto max-w-screen-xl px-5">
       <Head>
         <title>Devin Buchanan</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="p-5">
-        <Navbar/>
-        {/* <Hero header={header} key={header.name}/> */}
-      </div>
+      <Navbar/>
+      {/* <Hero header={header} key={header.name}/> */}
     </div>
   )
 }

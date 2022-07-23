@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import { faTiktok, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const navItems = [{name: 'fitness'}, {name: 'eqx+'}, {name: 'modeling'}];
 
@@ -13,7 +15,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-10 ease-in duration-300">
-      <div className="max-w-screen-xl m-auto flex justify-between items-center py-3 px-2">
+      <div className="max-w-screen-xl m-auto flex justify-between items-center py-2 px-4">
         <Link href="/">
           <h1 className="font-bold text-xl sm:text-2xl uppercase">Devin Buchanan</h1>
         </Link>
@@ -21,6 +23,8 @@ const Navbar = () => {
           {navItems.map((item) => (
             <li className="py-4 pl-5"><Link key={item.name} href={`#${item.name}`}>{item.name}</Link></li>
           ))}
+            <li className="py-4 pl-5"><FontAwesomeIcon icon={faTiktok}/></li>
+            <li className="py-4 pl-5"><FontAwesomeIcon icon={faInstagram}/></li>
         </ul>
         {/* Mobile Button */}
         <div onClick={handleNav} className="block sm:hidden z-10 py-4">
@@ -37,6 +41,8 @@ const Navbar = () => {
             {navItems.map((item) => (
               <li className="p-4 text-4xl hover:text-yellow-300"><Link key={item.name} href={`#${item.name}`}>{item.name}</Link></li>
             ))}
+            <li className="p-4 text-4xl hover:text-yellow-300"><FontAwesomeIcon icon={faTiktok}/></li>
+            <li className="p-4 text-4xl hover:text-yellow-300"><FontAwesomeIcon icon={faInstagram}/></li>
           </ul>
         </div>
       </div>
