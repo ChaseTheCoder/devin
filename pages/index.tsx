@@ -1,4 +1,3 @@
-import { analytics } from 'googleapis/build/src/apis/analytics';
 import Head from 'next/head'
 import { Hero, Navbar } from '../components';
 import { getHeader } from '../services';
