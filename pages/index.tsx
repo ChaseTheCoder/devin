@@ -10,7 +10,7 @@ export default function Home({ header }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar/>
-      {/* <Hero header={header} key={header.name}/> */}
+      <Hero header={header} key={header.name}/>
     </div>
   )
 }
