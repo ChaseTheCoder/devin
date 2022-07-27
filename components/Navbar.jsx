@@ -13,10 +13,10 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 ease-in duration-300">
-      <div className="max-w-screen-xl m-auto flex justify-between items-center py-2 px-5 bg-black">
+    <nav className="fixed top-0 left-0 w-full z-50 ease-in duration-300 px-5">
+      <div className="max-w-screen-lg m-auto flex justify-between items-center py-2 bg-black">
         <a href="/">
-          <h1 className="font-bold text-xl sm:text-2xl uppercase cursor-pointer">Devin Buchanan</h1>
+          <h1 className="text-sm uppercase font-bold cursor-pointer">Devin Buchanan</h1>
         </a>
         <ul className="hidden sm:flex">
           {navItems.map((item) => (
