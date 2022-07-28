@@ -4,7 +4,7 @@ import { getHeader, getMissions } from '../services';
 
 export default function Home({ header, mission }: { header: any, mission: any}) {
   return (
-    <div className="container mx-auto max-w-screen-xl p-5">
+    <div className="container mx-auto px-5">
       <Head>
         <title>Devin Buchanan</title>
         <link rel="icon" href="/favicon.ico" />
