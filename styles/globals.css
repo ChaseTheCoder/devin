@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&display=swap');
 
 body {
@@ -14,3 +20,36 @@ body {
 .theme-color {
   color: yellow;
 }
+
+.header--hr-centered {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.header--hr-centered:before,
+.header--hr-centered:after {
+  content: '';
+  border-top: 1px solid;
+  margin: 0 20px 0 0;
+  flex: 1 0 20px;
+  color: #fffb00;
+}
+
+.header--hr-centered:after {
+  margin: 0 0 0 20px;
+}
+
+/* @media only screen and (max-width: 600px){
+  .header--hr-centered:before,
+  .header--hr-centered:after {
+    margin: 0 10px 0 0;
+    flex: 1 0 10px;
+  
+  }
+} */
+
+
+  

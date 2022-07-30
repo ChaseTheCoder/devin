@@ -11,7 +11,7 @@ export default function Home({ header, mission }: { header: any, mission: any}) 
       </Head>
       <Navbar/>
       <Hero header={header} key={header.name}/>
-      {/* <Mission mission={mission}/> */}
+      <Mission mission={mission}/>
     </div>
   )
 }
