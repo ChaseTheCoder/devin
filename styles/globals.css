@@ -51,5 +51,9 @@ body {
   }
 } */
 
+.footer--link {
+  text-decoration: underline;
+  text-decoration-color:#fffb00;
+}
 
   

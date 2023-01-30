@@ -33,3 +33,18 @@ export const getMissions = async () => {
   const result = await request(graphqlAPI, query);
   return result.missions[0];
 }
+
+export const getModeling = async () => {
+  const query = gql`
+    query Modeling {
+      modelings {
+        header
+        images {
+          url
+        }
+      }
+    }
+  `;
+  const result = await request(graphqlAPI, query);
+  return result.modelings[0];
+}
