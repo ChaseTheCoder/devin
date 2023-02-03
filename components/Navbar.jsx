@@ -3,7 +3,7 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { faTiktok, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const navItems = [{name: 'fitness'}, {name: 'eqx+'}, {name: 'modeling'}];
+const navItems = [{name: 'FITNESS'}, {name: 'EQUINOX+'}, {name: 'MODELING'}];
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);

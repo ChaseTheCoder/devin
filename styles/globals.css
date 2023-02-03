@@ -35,7 +35,7 @@ body {
   border-top: 1px solid;
   margin: 0 20px 0 0;
   flex: 1 0 20px;
-  color: #fffb00;
+  color: #ffff00;
 }
 
 .header--hr-centered:after {
@@ -53,7 +53,9 @@ body {
 
 .footer--link {
   text-decoration: underline;
-  text-decoration-color:#fffb00;
+  text-decoration-color:#ffff00;
 }
 
-  
+.button--learn-more {
+  background-color: #ffff00;
+}  

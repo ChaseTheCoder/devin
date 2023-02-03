@@ -1,8 +1,8 @@
 import Head from 'next/head'
-import { Hero, Navbar, Mission, Modeling, Footer } from '../components';
-import { getHeader, getMissions, getModeling } from '../services';
+import { Hero, Navbar, Mission, Modeling, Footer, Equinox } from '../components';
+import { getEquinox, getHeader, getMissions, getModeling } from '../services';
 
-export default function Home({ header, mission, modeling }: { header: any, mission: any, modeling: any}) {
+export default function Home({ header, mission, modeling, equinox }: { header: any, mission: any, modeling: any, equinox: any}) {
   return (
     <div className="container mx-auto px-5">
       <Head>
@@ -24,6 +24,7 @@ export default function Home({ header, mission, modeling }: { header: any, missi
       <Hero header={header} key={header.name}/>
       <Mission mission={mission}/>
       <Modeling modeling={modeling}/>
+      <Equinox equinox={equinox}/>
       <Footer/>
     </div>
   )
@@ -33,12 +34,14 @@ export async function getStaticProps(){
   const header = (await getHeader()) || [];
   const mission = (await getMissions()) || [];
   const modeling = (await getModeling()) || [];
+  const equinox = (await getEquinox()) || [];
   console.error();
   return {
     props: { 
       header,
       mission,
-      modeling
+      modeling,
+      equinox
     }
   }
 }
