@@ -3,11 +3,15 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { faTiktok, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const navItems = [{name: 'FITNESS'}, {name: 'EQUINOX+'}, {name: 'MODELING'}];
+const navItems = [
+  {name: 'Fitness'}, 
+  {name: 'Modeling'}, 
+  {name: 'Equinox+'}
+];
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
-
+  
   const handleNav = () => {
     setNav(!nav)
   }
@@ -20,7 +24,11 @@ const Navbar = () => {
         </a>
         <ul className="hidden sm:flex">
           {navItems.map((item) => (
-            <li className="py-4 pl-5 hover:text-yellow-300"><a key={item.name} href={`/#${item.name}`}>{item.name}</a></li>
+            <li className="py-4 pl-5 hover:text-yellow-300" key={item.name}>
+              <a href={`#${item.name.toLocaleLowerCase()}`}>
+                {item.name.toUpperCase()}
+              </a>
+            </li>
           ))}
             <li className="py-4 pl-5 cursor-pointer hover:text-yellow-300"><a key="tiktok" href="https://www.tiktok.com/@theeblacktokyo" target="_blank"><FontAwesomeIcon icon={faTiktok}/></a></li>
             <li className="py-4 pl-5 cursor-pointer hover:text-yellow-300"><a key="tiktok" href="https://www.instagram.com/theeblacktokyo" target="_blank"><FontAwesomeIcon icon={faInstagram}/></a></li>
