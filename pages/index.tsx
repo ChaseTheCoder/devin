@@ -1,8 +1,11 @@
 import Head from 'next/head'
 import { Hero, Navbar, Mission, Modeling, Footer, Equinox } from '../components';
 import { getEquinox, getHeader, getMissions, getModeling } from '../services';
+import useOnScreen from '../hooks/hooks';
+import { useEffect, useRef, useState } from 'react';
 
 export default function Home({ header, mission, modeling, equinox }: { header: any, mission: any, modeling: any, equinox: any}) {
+
   return (
     <div className="container mx-auto px-5">
       <Head>

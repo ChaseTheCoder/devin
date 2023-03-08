@@ -30,11 +30,19 @@ const Navbar = () => {
               </a>
             </li>
           ))}
-            <li className="py-4 pl-5 cursor-pointer hover:text-yellow-300"><a key="tiktok" href="https://www.tiktok.com/@theeblacktokyo" target="_blank"><FontAwesomeIcon icon={faTiktok}/></a></li>
-            <li className="py-4 pl-5 cursor-pointer hover:text-yellow-300"><a key="tiktok" href="https://www.instagram.com/theeblacktokyo" target="_blank"><FontAwesomeIcon icon={faInstagram}/></a></li>
+            <li className="py-4 pl-5 cursor-pointer hover:text-yellow-300">
+              <a key="tiktok" href="https://www.tiktok.com/@theeblacktokyo" target="_blank">
+                <FontAwesomeIcon icon={faTiktok}/>
+              </a>
+            </li>
+            <li className="py-4 pl-5 cursor-pointer hover:text-yellow-300">
+              <a key="tiktok" href="https://www.instagram.com/theeblacktokyo" target="_blank">
+                <FontAwesomeIcon icon={faInstagram}/>
+              </a>
+            </li>
         </ul>
         {/* Mobile Button */}
-        <div onClick={handleNav} className="block sm:hidden z-10 py-4">
+        <div onClick={handleNav} className="block sm:hidden z-10 py-3">
           {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20}/>}
         </div>
         {/* Mobile Menu */}
@@ -46,10 +54,22 @@ const Navbar = () => {
           >
           <ul>
             {navItems.map((item) => (
-              <li className="p-4 text-4xl hover:text-yellow-300"><a key={item.name} href={`/#${item.name}`}>{item.name}</a></li>
+              <li onClick={handleNav} className="p-4 text-4xl hover:text-yellow-300">
+                <a key={item.name} href={`/#${item.name.toLocaleLowerCase()}`}>
+                  {item.name}
+                </a>
+              </li>
             ))}
-            <li className="p-4 text-4xl hover:text-yellow-300"><a key="tiktok" href="https://www.tiktok.com/@theeblacktokyo" target="_blank"><FontAwesomeIcon icon={faTiktok}/></a></li>
-            <li className="p-4 text-4xl hover:text-yellow-300"><a key="tiktok" href="https://www.instagram.com/theeblacktokyo/" target="_blank"><FontAwesomeIcon icon={faInstagram}/></a></li>
+            <li className="p-4 text-4xl hover:text-yellow-300">
+              <a key="tiktok" href="https://www.tiktok.com/@theeblacktokyo" target="_blank">
+                <FontAwesomeIcon icon={faTiktok}/>
+              </a>
+            </li>
+            <li className="p-4 text-4xl hover:text-yellow-300">
+              <a key="tiktok" href="https://www.instagram.com/theeblacktokyo/" target="_blank">
+                <FontAwesomeIcon icon={faInstagram}/>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
