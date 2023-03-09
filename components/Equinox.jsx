@@ -8,13 +8,13 @@ const Equinox = ({ equinox }) => {
       id='equinox+'
     >
       <div className='basis-1/2'>
-        <h1 className="text-xs uppercase sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl font-medium header--hr-centered pb-5 lg:pb-10">
+        <h1 className="uppercase text-xl md:text-3xl lg:text-4xl xl:text-5xl font-medium header--hr-centered pb-5 lg:pb-10">
           {equinox.title}
         </h1>
         <p className='sm:text-lg md:text-2xl lg:text-3xl'>
           {equinox.description}
         </p>
-        <a className="text-2xl font-bold underline underline-offset-6 theme-color" href={equinox.callToActionLink} target="_blank">
+        <a className="sm:text-lg md:text-2xl lg:text-3xl underline underline-offset-6 theme-color pt-10" href={equinox.callToActionLink} target="_blank">
           {equinox.callToAction}
         </a>
       </div>

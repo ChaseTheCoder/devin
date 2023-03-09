@@ -8,7 +8,7 @@ const Mission = ({ mission }) => {
     id='fitness'
   >
     <div className='basis-1/3 height-100 flex'>
-      <h1 className="text-xs uppercase sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl font-medium header--hr-centered align-center">
+      <h1 className="uppercase text-lg sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl font-medium header--hr-centered align-center">
         {mission.missionStatement}
       </h1>
     </div>
