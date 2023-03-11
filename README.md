@@ -17,4 +17,4 @@ This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](
 
 Design in Process by me in [Figma](https://www.figma.com/file/jpCuH5Qk1ramd7rcMsZr0r/TheeBlackTokyo?node-id=2%3A2) in collaboartion with the client.
 
-Currently in progress to get the Alpha version of website developed.
+Alpha version is now live at, [Click here to see Devin Buchanan's portfolio page](https://www.devinbuchanan.com).

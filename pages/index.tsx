@@ -14,12 +14,12 @@ export default function Home({ header, mission, modeling, equinox }: { header: a
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
         <meta name="theme-color" content="#000000"/>
         <meta name="robots" content="index,follow"/>
-        <meta name="description" content="Devin Buchanan's page for fitness, healthy diet, modeling, fashion, and Chicago lifestyle. Find his social links to Instagram, Tiktok, modeling portfolio, and more."/>
-        <meta name="keywords" content="fitness, diet, modeling, fashion, Chicago lifestyle"/>
+        <meta name="description" content="Devin Buchanan: Fitness & Modeling Portfolio."/>
+        <meta name="keywords" content="fitness, modeling, portfolio, Instagram, Tiktok, Chicago"/>
         <link rel="icon" href="/favicon.ico"/>
         <meta property="og:type" content="website"/>
-        <meta property="og:title" content="Devin Buchanan: Fitness, modeling, Chicago lifestyle"/>
-        <meta property="og:description" content="Devin Buchanan's page for fitness, healthy diet, modeling, fashion, and Chicago lifestyle. Find his social links to Instagram and Tiktok, modeling portfolio, and more."/>
+        <meta property="og:title" content="Devin Buchanan: Fitness & Modeling"/>
+        <meta property="og:description" content="Devin Buchanan's fitness & modeling portfolio. Find his social links to Instagram and Tiktok."/>
         <meta property="og:url" content="https://www.devinbuchanan.com/"/>
         <meta property="og:image" content="https://media.graphassets.com/HU6DpvnlQkiJ1tYrSs6E"/>
       </Head>
