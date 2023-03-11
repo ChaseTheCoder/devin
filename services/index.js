@@ -1,55 +1,57 @@
 import { request, gql } from 'graphql-request';
-import { join } from 'path';
+// import { join } from 'path';
 
 const graphqlAPI = process.env.NEXT_PUBLIC_GRAPHCMS_ENDPOINT;
 
 export const getHeader = async () => {
   const query = gql`
     query MyQuery {
-      headers {
-        socialHandleLink
-        socialHandle
-        name
+      header(where: {id: "cl5mz7o5cc0lx0fk16ggxyh8a"}) {
+        headerImageAltText
         headerImage {
           url
         }
+        name
+        socialHandle
+        socialHandleLink
       }
     }  
   `;
   const result = await request(graphqlAPI, query);
-  return result.headers[0];
+  return result.header;
 }
 
 export const getMissions = async () => {
   const query = gql`
     query MyQuery {
-      missions {
+      mission(where: {id: "cl6305stz7d110bk89exepa1c"}) {
+        imageAltText
+        missionStatement
         images {
           url
         }
-        missionStatement
       }
-    }
-  `;
+    }`;
   const result = await request(graphqlAPI, query);
-  return result.missions[0];
+  return result.mission;
 }
 
 export const getEquinox = async () => {
   const query = gql`
   query MyQuery {
-    eqxes {
+    eqx(where: {id: "cldmhjzim5xl30ak93uktozhb"}) {
       title
       description
-      callToAction
-      callToActionLink
+      headerImageAlt
       headerImage {
         url
       }
+      callToAction
+      callToActionLink
     }
   }`
   const result = await request(graphqlAPI, query);
-  return result.eqxes[0];
+  return result.eqx;
 }
 
 export const getModeling = async () => {

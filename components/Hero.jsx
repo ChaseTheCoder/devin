@@ -7,7 +7,7 @@ const Hero = ({ header }) => {
         <h1 className="text-xl sm:text-4xl md:text-5xl lg:text-6xl font-bold uppercase">{header.name}</h1>
         <h2 className="text-sm md:text-2xl theme-color"><a href={header.socialHandleLink} target="_blank">{header.socialHandle}</a></h2>
       </div>
-        <img className="absolute right-0 bottom-0 h-4/6 sm:h-5/6" src={header.headerImage.url} alt={header.name} />
+        <img className="absolute right-0 bottom-0 h-4/6 sm:h-5/6" src={header.headerImage.url} alt={header.headerImageAltText} />
     </div>
   )
 }

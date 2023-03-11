@@ -15,7 +15,8 @@ const Mission = ({ mission }) => {
     <div className='basis-2/3'>
       <img 
         className='w-auto' 
-        src={mission.images[1].url}
+        src={mission.images[0].url}
+        alt={mission.imageAltText}
       />
     </div>
   </div>

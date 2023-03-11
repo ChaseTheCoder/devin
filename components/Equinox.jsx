@@ -19,7 +19,11 @@ const Equinox = ({ equinox }) => {
         </a>
       </div>
       <div className='basis-1/2 sm:order-first'>
-        <img className='w-auto' src={equinox.headerImage.url}/>
+        <img 
+          className='w-auto' 
+          src={equinox.headerImage.url}
+          alt={equinox.headerImageAlt}
+        />
       </div>
     </div>
   )
