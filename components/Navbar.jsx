@@ -31,12 +31,12 @@ const Navbar = () => {
             </li>
           ))}
             <li className="py-4 pl-5 cursor-pointer hover:text-yellow-300">
-              <a key="tiktok" href="https://www.tiktok.com/@theeblacktokyo" target="_blank">
+              <a key="tiktok" href="https://www.tiktok.com/@theeblacktokyo" aria-label='TikTok icon' target="_blank">
                 <FontAwesomeIcon icon={faTiktok}/>
               </a>
             </li>
             <li className="py-4 pl-5 cursor-pointer hover:text-yellow-300">
-              <a key="tiktok" href="https://www.instagram.com/theeblacktokyo" target="_blank">
+              <a key="tiktok" href="https://www.instagram.com/theeblacktokyo" aria-label='Instagram icon' target="_blank">
                 <FontAwesomeIcon icon={faInstagram}/>
               </a>
             </li>
