@@ -17,7 +17,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 ease-in duration-300 px-5 bg-black">
+    <nav id="navbar" className="fixed top-0 left-0 w-full z-50 ease-in duration-300 px-5 bg-black">
       <div className="max-w-screen-xl m-auto flex justify-between items-center py-1">
         <a href="/">
           <h1 className="text-sm uppercase font-bold cursor-pointer">Devin Buchanan</h1>
@@ -30,13 +30,13 @@ const Navbar = () => {
               </a>
             </li>
           ))}
-            <li className="py-4 pl-5 cursor-pointer hover:text-yellow-300">
-              <a key="tiktok" href="https://www.tiktok.com/@theeblacktokyo" aria-label='TikTok icon' target="_blank">
+            <li key="tiktok" className="py-4 pl-5 cursor-pointer hover:text-yellow-300">
+              <a href="https://www.tiktok.com/@theeblacktokyo" aria-label='TikTok icon' target="_blank">
                 <FontAwesomeIcon icon={faTiktok}/>
               </a>
             </li>
-            <li className="py-4 pl-5 cursor-pointer hover:text-yellow-300">
-              <a key="tiktok" href="https://www.instagram.com/theeblacktokyo" aria-label='Instagram icon' target="_blank">
+            <li key="ig" className="py-4 pl-5 cursor-pointer hover:text-yellow-300">
+              <a href="https://www.instagram.com/theeblacktokyo" aria-label='Instagram icon' target="_blank">
                 <FontAwesomeIcon icon={faInstagram}/>
               </a>
             </li>

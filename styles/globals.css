@@ -17,6 +17,57 @@ body {
   background-color: #000000;
 }
 
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#navbar {
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+#heroTitle {
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+#hero img {
+  animation: fadeInAnimation ease 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+#fitness div h1 {
+  animation: fadeInAnimation ease 6s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+#fitness div img {
+  animation: fadeInAnimation ease 8s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+#modeling {
+  animation: fadeInAnimation ease 10s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+#equinox {
+  animation: fadeInAnimation ease 14s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
 .theme-color {
   color: yellow;
 }
@@ -42,6 +93,21 @@ body {
 
 .header--hr-centered:after {
   margin: 0 0 0 20px;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#heroImage {
+  animation: 1s ease-out 0s 1 slideInLeft;
+  background: #666;
+  padding: 40px;
 }
 
 /* @media only screen and (max-width: 600px){

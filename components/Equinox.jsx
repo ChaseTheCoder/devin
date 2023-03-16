@@ -5,7 +5,7 @@ const Equinox = ({ equinox }) => {
   return (
     <div 
       className="mx-auto pt-10 xl:pt-20 gap-8 flex flex-col sm:flex-row"
-      id='equinox+'
+      id='equinox'
     >
       <div className='basis-1/2'>
         <h1 className="uppercase text-xl md:text-3xl lg:text-4xl xl:text-5xl font-medium header--hr-centered pb-5 lg:pb-10">
